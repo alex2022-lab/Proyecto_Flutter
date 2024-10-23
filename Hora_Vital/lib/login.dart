@@ -30,11 +30,11 @@ class Login extends StatelessWidget{
                   decoration: InputDecoration(
                     labelText: 'Correo',
                     labelStyle: TextStyle(
-                      color: Color(0xFFBEBCBC),
+                      color: Color(0xAA5E5E5E),
                       fontWeight: FontWeight.w700,
                     ),
                     filled: true,
-                    fillColor: Colors.cyanAccent,
+                    fillColor: Color(0xFFD9D9D9),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20)),
                       borderSide: BorderSide(
@@ -55,11 +55,11 @@ class Login extends StatelessWidget{
                   decoration: const InputDecoration(
                     labelText: 'Contraseña',
                     labelStyle: TextStyle(
-                      color: Color(0xFFBEBCBC),
+                      color: Color(0xAA5E5E5E),
                       fontWeight: FontWeight.w700,
                     ),
                     filled: true,
-                    fillColor: Colors.cyanAccent,
+                    fillColor: Color(0xFFD9D9D9),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20)),
                       borderSide: BorderSide(
@@ -72,7 +72,7 @@ class Login extends StatelessWidget{
                 ),
               ),
             ),
-            ElevatedButton(onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context)=> registro.cuerpo()))},
+            ElevatedButton(onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context)=> registro.cuerpo(context)))},
                 child: const Text(
                     'Ingresar'
                 ))
