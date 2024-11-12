@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("Hora Vital", style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.blueAccent,
       ),
-      body: login.build(context),
+      body: Login(),
 
     );
   }

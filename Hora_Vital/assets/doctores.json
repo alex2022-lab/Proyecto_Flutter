@@ -1,0 +1,24 @@
+{
+  "doctores": [
+    {
+      "nombre": "Juan Pérez",
+      "especialidad": "Cardiologo"
+    },
+    {
+      "nombre": "Max Muñoz",
+      "especialidad": "Traumatologo"
+    },
+    {
+      "nombre": "Axel Díaz",
+      "especialidad": "Ortopedista"
+    },
+    {
+      "nombre": "Juan Lagos",
+      "especialidad": "Kinesiologo"
+    },
+    {
+      "nombre": "Mario Ortega",
+      "especialidad": "Cirujano"
+    }
+  ]
+}

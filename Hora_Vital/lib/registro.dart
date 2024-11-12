@@ -13,6 +13,7 @@ class Registro {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Icon(Icons.supervised_user_circle, size: 90),
             const Text(
               "Nueva Cuenta",
               textAlign: TextAlign.center,
@@ -23,30 +24,6 @@ class Registro {
               ),
             ),
 
-            //nombre
-            const SizedBox(
-              width: 300,
-              child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 4.0), // Añadir margen
-                child: TextField(
-                  decoration: InputDecoration(
-                    labelText: 'Nombre',
-                    labelStyle: TextStyle(
-                      color: Color(0xAA5E5E5E),
-                      fontWeight: FontWeight.w700,
-                    ),
-                    filled: true,
-                    fillColor: Color(0xFFD9D9D9),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
 
             //email
             const SizedBox(
@@ -57,31 +34,6 @@ class Registro {
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
                     labelText: 'Correo',
-                    labelStyle: TextStyle(
-                      color: Color(0xAA5E5E5E),
-                      fontWeight: FontWeight.w700,
-                    ),
-                    filled: true,
-                    fillColor: Color(0xFFD9D9D9),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                      borderSide: BorderSide(
-                        color: Colors.transparent,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-            //direccion
-            const SizedBox(
-              width: 300,
-              child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 4.0), // Añadir margen
-                child: TextField(
-                  decoration: InputDecoration(
-                    labelText: 'Dirección',
                     labelStyle: TextStyle(
                       color: Color(0xAA5E5E5E),
                       fontWeight: FontWeight.w700,
@@ -127,7 +79,11 @@ class Registro {
               ),
             ),
             ElevatedButton(onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context)=> reservaMedicaParte1.cuerpo(context)))},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue
+                ),
                 child: const Text(
+                  style: TextStyle(color: Colors.white),
                     'Crear'
                 ))
           ],),

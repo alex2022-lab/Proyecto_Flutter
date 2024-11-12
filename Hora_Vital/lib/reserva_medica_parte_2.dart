@@ -12,7 +12,7 @@ class ReservaMedicaParte2 {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              "Reserva Médica",
+              "Datos médicos",
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black,
@@ -97,7 +97,11 @@ class ReservaMedicaParte2 {
               ),
             ),
             ElevatedButton(onPressed: () => {},
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue
+                ),
                 child: const Text(
+                    style: TextStyle(color: Colors.white),
                     'Guardar'
                 ))
           ],),

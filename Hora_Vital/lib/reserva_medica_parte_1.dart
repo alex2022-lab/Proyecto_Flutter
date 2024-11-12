@@ -14,7 +14,7 @@ class ReservaMedicaParte1 {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              "Reserva Médica",
+              "Datos del paciente",
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black,
@@ -99,7 +99,11 @@ class ReservaMedicaParte1 {
               ),
             ),
             ElevatedButton(onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context)=> reservaMedicaParte2.cuerpo()))},
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue
+                ),
                 child: const Text(
+                    style: TextStyle(color: Colors.white),
                     'Siguiente'
                 ))
           ],),
